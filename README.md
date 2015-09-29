@@ -8,7 +8,7 @@ API implementation using [endpoints][1] that follows [JSON API specs][2].
 
 2. `npm install`
 
-3. `node index.js`
+3. `npm start`
 
 4. APIs:
  - `http://localhost:8080/v1`
