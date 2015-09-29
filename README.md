@@ -4,7 +4,7 @@ API implementation using [endpoints][1] that follows [JSON API specs][2].
 
 ## Steps
 
-1. `git clone https://github.com/tenzan/node-api`
+1. `git clone https://github.com/tenzan/node-api-pg`
 
 2. `npm install`
 
