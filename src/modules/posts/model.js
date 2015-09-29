@@ -4,7 +4,7 @@ const instanceProps = {
   tableName: 'posts',
   hasTimestamps: true,
   tags: function () {
-    return this.belongsToMany(require('../tags/model'), 'posts_tags');
+    return this.morphMany(require('../tags/model'), 'posts_tags');
   }
 };
 
@@ -14,8 +14,8 @@ const classProps = {
     tag_id: function (qb, value) {
       return qb.whereIn('tag_id', value);
     },
-    name: function (qb, value) {
-      return qb.whereIn('name', value);
+    title: function (qb, value) {
+      return qb.whereIn('title', value);
     }
   },
   relations: [
