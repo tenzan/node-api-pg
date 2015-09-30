@@ -4,7 +4,7 @@ const instanceProps = {
   tableName: 'tags',
   hasTimestamps: true,
   posts: function () {
-    return this.morphMany(require('../posts/model'), 'posts_tags');
+    return this.belongsToMany(require('../posts/model'));
   }
 };
 
