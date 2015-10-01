@@ -4,7 +4,7 @@ module.exports = {
       id: {
         type: 'integer'
       },
-      name: {
+      title: {
         type: 'string'
       }
     }
